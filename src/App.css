@@ -1,0 +1,149 @@
+.header {
+  width: 100vw;
+  margin: 1rem;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+}
+
+.App.blur {
+  filter: blur(3px);
+  opacity: 0.5;
+}
+
+.container-form {
+  display: grid;
+  gap: 1rem;
+}
+
+.form {
+  width: 250px;
+  display: grid;
+  gap: 1rem;
+  border: 2px solid black;
+  border-radius: 15px;
+  padding: 1rem;
+  position: fixed;
+  top: 20%;
+  right: 40%;
+}
+
+input {
+  border: 1px solid rgb(0, 0, 0);
+}
+
+.input {
+  display: grid;
+  gap: 1rem;
+  color:#00FF00;
+  font-weight: bold
+}
+
+
+
+.conteiner-card {
+  width: 70vw;
+  display: grid;
+
+  gap: 1rem;
+  grid-auto-rows: 15rem;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  padding: 1rem;
+}
+
+.cardProduct {
+  width: 240px;
+  height: 240px;
+  display: grid;
+  border: 2px solid black;
+  border-radius: 15px;
+  gap: 1rem;
+  padding: 1rem;
+  text-align: center;
+
+  font-weight: bold;
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  color: black;
+}
+
+.containerBtn {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.btnDelete {
+  padding: 10px;
+  border-radius: 10px;
+  background-color:#8B0000;
+  width: 40px;
+}
+
+
+.btnDelete:hover {
+  cursor: pointer;
+
+}
+
+.btnUpdate {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #00FF00;
+  width: 40px;
+}
+
+.btnUpdate:hover {
+  cursor: pointer;
+
+}
+
+.btnAdd {
+  color: white;
+  background-color: rgba(0, 21, 255, 0.669);
+  border: 1px solid rgba(0, 21, 255, 0.8);
+  transition: all 0.3s ease-in-out;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+  border-radius: 20px 50px;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+.btnAdd:hover {
+  background-color: rgba(0, 21, 255, 0.8);
+}
+
+.formTitle {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: end;
+}
+
+.btnCloseForm {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #8B0000;
+}
+
+.btnSubmit {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgba(0, 21, 255, 0.669);
+  color: white;
+}
+
+.inputText {
+  padding: 10px;
+  border-radius: 15px;
+}
+
+/* breackpoint */
+
+@media (min-width: 0px) and (max-width: 480px) {
+  .form {
+    position: fixed;
+    top: 10%;
+    right: 9%;
+  }
+}
+
